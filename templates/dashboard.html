@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard - Cyberbullying Detection</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #f3f5ff, #e9eefb);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      margin: 0;
+      padding: 40px 0;
+    }
+
+    .dashboard-container {
+      background: #fff;
+      border-radius: 18px;
+      padding: 30px 40px;
+      max-width: 900px;
+      width: 100%;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 10px;
+      font-size: 26px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #777;
+      margin-bottom: 25px;
+    }
+
+    .logout {
+      text-align: right;
+      margin-bottom: 15px;
+    }
+
+    .logout a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .logout a:hover {
+      color: #0056b3;
+    }
+
+    /* --- Stats Cards --- */
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      flex: 1;
+      min-width: 180px;
+      margin: 10px;
+      padding: 20px;
+      text-align: center;
+      border-radius: 12px;
+      color: white;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.04);
+    }
+
+    .card h2 {
+      font-size: 32px;
+      margin: 0;
+    }
+
+    .card p {
+      margin: 8px 0 0;
+      font-size: 15px;
+    }
+
+    .total {
+      background: linear-gradient(135deg, #007bff, #00bfff);
+    }
+
+    .bullying {
+      background: linear-gradient(135deg, #dc3545, #ff6b81);
+    }
+
+    .non {
+      background: linear-gradient(135deg, #28a745, #34d058);
+    }
+
+    /* --- Recent Predictions --- */
+    .recent-section {
+      margin-top: 25px;
+    }
+
+    .recent-section h3 {
+      color: #333;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      background: #f8faff;
+      margin-bottom: 8px;
+      padding: 12px 15px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-left: 4px solid #007bff;
+      font-size: 15px;
+    }
+
+    ul li span {
+      font-weight: 600;
+    }
+
+    ul li .label {
+      color: #dc3545;
+    }
+
+    ul li .label.non {
+      color: #28a745;
+    }
+
+    /* --- Buttons --- */
+    .bottom-links {
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .bottom-links a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: 600;
+      margin: 0 10px;
+    }
+
+    .bottom-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="logout">
+      <a href="/">🏠 Home</a> | 
+      <a href="/logout">🚪 Logout</a>
+    </div>
+
+    <h1>📊 Admin Dashboard</h1>
+    <p class="subtitle">Overview of recent detections and activity</p>
+
+    <div class="stats">
+      <div class="card total">
+        <h2>{{ stats.total }}</h2>
+        <p>Total Predictions</p>
+      </div>
+      <div class="card bullying">
+        <h2>{{ stats.bullying }}</h2>
+        <p>Cyberbullying</p>
+      </div>
+      <div class="card non">
+        <h2>{{ stats.non }}</h2>
+        <p>Non-Bullying</p>
+      </div>
+    </div>
+
+    <div class="recent-section">
+      <h3>🕓 Recent Predictions</h3>
+      <ul>
+        {% for entry in stats.recent %}
+          <li>
+            <span>"{{ entry.text }}"</span>
+            <span class="label {% if entry.label == 'Non-Cyberbullying' %}non{% endif %}">
+              — {{ entry.label }}
+            </span>
+            <span>{{ entry.timestamp | datetimeformat }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="bottom-links">
+      <a href="/">← Back to Home</a>
+      <a href="/train_transformer">🚀 Train New Model</a>
+    </div>
+  </div>
+</body>
+</html>

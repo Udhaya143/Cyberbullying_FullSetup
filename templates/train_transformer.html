@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🚀 Transformer Training Progress</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body {
+            background: #f6f8fa;
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            width: 650px;
+            text-align: center;
+        }
+        textarea {
+            width: 100%;
+            height: 220px;
+            background: #0d1117;
+            color: #c9d1d9;
+            border: none;
+            padding: 12px;
+            border-radius: 10px;
+            font-family: "Courier New", monospace;
+            font-size: 14px;
+            resize: none;
+        }
+        button {
+            background: #0055ff;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover { background: #003fcc; }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .emoji {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>🚀 Transformer Training Progress</h2>
+    <p>Select your dataset (.csv file):</p>
+    <input type="file" id="csvFile" accept=".csv">
+    <br><br>
+    <button onclick="uploadFile()">Start Training</button>
+    <br><br>
+    <textarea id="logOutput" readonly>⏳ Waiting for training logs...</textarea>
+
+    <div class="footer">
+        <a href="/" class="emoji">🏠 Back to Home</a> |
+        <a href="/dashboard" class="emoji">📊 Admin Dashboard</a>
+    </div>
+</div>
+
+<script>
+async function uploadFile() {
+    const fileInput = document.getElementById('csvFile');
+    const logOutput = document.getElementById('logOutput');
+
+    if (!fileInput.files.length) {
+        alert('Please select a CSV file first.');
+        return;
+    }
+
+    logOutput.value = "🚀 Uploading and starting training...\n";
+
+    const formData = new FormData();
+    formData.append('file', fileInput.files[0]);
+
+    const res = await fetch('/upload_train', { method: 'POST', body: formData });
+    const data = await res.json();
+
+    if (data.error) {
+        logOutput.value += `❌ Upload failed: ${data.error}`;
+        return;
+    }
+
+    logOutput.value += `✅ ${data.message}\n\n`;
+    startLogStream();
+}
+
+function startLogStream() {
+    const logOutput = document.getElementById('logOutput');
+    const eventSource = new EventSource('/train_logs');
+    eventSource.onmessage = function(event) {
+        logOutput.value += event.data + "\n";
+        logOutput.scrollTop = logOutput.scrollHeight;
+    };
+    eventSource.onerror = function() {
+        logOutput.value += "\n⚠️ [Stream Disconnected]\n";
+        eventSource.close();
+    };
+}
+</script>
+</body>
+</html>

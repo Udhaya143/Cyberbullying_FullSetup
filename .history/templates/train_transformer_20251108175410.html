@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🚀 Transformer Training Progress</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body {
+            background-color: #f3f5fa;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 40px;
+            margin: 60px auto;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+        }
+        .log-box {
+            background: #0d1117;
+            color: #fff;
+            padding: 16px;
+            text-align: left;
+            font-family: monospace;
+            border-radius: 8px;
+            margin-top: 20px;
+            min-height: 100px;
+        }
+        .btn {
+            background-color: #0066ff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #004ecc;
+        }
+        a {
+            text-decoration: none;
+            color: #0066ff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🚀 Transformer Training Progress</h2>
+        <p>Select your dataset (.csv file):</p>
+        <input type="file" id="fileInput" accept=".csv"><br><br>
+        <button class="btn" id="uploadBtn">Start Training</button>
+
+        <div class="log-box" id="logBox">
+            ⏳ Waiting for training logs...
+        </div>
+
+        <br>
+        <a href="/">🏠 Back to Home</a> | 
+        <a href="/dashboard">📊 Admin Dashboard</a>
+    </div>
+
+    <script>
+        const uploadBtn = document.getElementById("uploadBtn");
+        const fileInput = document.getElementById("fileInput");
+        const logBox = document.getElementById("logBox");
+
+        uploadBtn.addEventListener("click", async () => {
+            const file = fileInput.files[0];
+            if (!file) {
+                alert("Please choose a CSV file first!");
+                return;
+            }
+
+            logBox.innerHTML = "🚀 Uploading and starting training...";
+
+            const formData = new FormData();
+            formData.append("file", file);
+
+            try {
+                const res = await fetch("/upload_train", { method: "POST", body: formData });
+                const data = await res.json();
+                logBox.innerHTML = "📡 " + data.message;
+            } catch (err) {
+                logBox.innerHTML = "❌ Upload failed: " + err;
+            }
+
+            // Stream logs after upload
+            setTimeout(async () => {
+                const response = await fetch("/train_logs");
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                logBox.innerHTML = "";
+
+                while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) break;
+                    logBox.innerHTML += decoder.decode(value);
+                    logBox.scrollTop = logBox.scrollHeight;
+                }
+            }, 3000);
+        });
+    </script>
+</body>
+</html>

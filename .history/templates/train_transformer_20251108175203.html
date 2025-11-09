@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🚀 Transformer Training Progress</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    body { background-color: #f9fbff; font-family: 'Segoe UI', sans-serif; }
+    .container { max-width: 600px; margin: 60px auto; background: #fff; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); padding: 25px; text-align: center; }
+    h2 { color: #222; margin-bottom: 15px; }
+    input[type="file"] { margin: 15px 0; }
+    button { background: #2563eb; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-size: 16px; }
+    button:hover { background: #1e40af; }
+    .logs { margin-top: 20px; padding: 15px; background: #0f172a; color: #facc15; border-radius: 10px; text-align: left; font-family: monospace; height: 200px; overflow-y: auto; white-space: pre-wrap; }
+    .back-links { margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🚀 Transformer Training Progress</h2>
+    <p>Select your dataset (.csv file):</p>
+    <input type="file" id="csvFile" accept=".csv">
+    <br>
+    <button id="startBtn">Start Training</button>
+
+    <div class="logs" id="logBox">⌛ Waiting for training logs...</div>
+
+    <div class="back-links">
+      <a href="/">🏠 Back to Home</a> | <a href="/dashboard">📊 Admin Dashboard</a>
+    </div>
+  </div>
+
+  <script>
+    const startBtn = document.getElementById('startBtn');
+    const fileInput = document.getElementById('csvFile');
+    const logBox = document.getElementById('logBox');
+
+    startBtn.addEventListener('click', async () => {
+      if (!fileInput.files.length) {
+        alert("Please choose a CSV file first!");
+        return;
+      }
+      const formData = new FormData();
+      formData.append("file", fileInput.files[0]);
+
+      logBox.textContent = "🚀 Uploading and starting training...\n";
+
+      try {
+        const res = await fetch("/upload_train", { method: "POST", body: formData });
+        const data = await res.json();
+        if (data.status === "success") {
+          logBox.textContent += "✅ Training started! Now streaming logs...\n";
+          const evtSource = new EventSource("/train_logs");
+          evtSource.onmessage = e => logBox.textContent += e.data + "\n";
+        } else {
+          logBox.textContent += "❌ Upload failed: " + (data.message || "unknown") + "\n";
+        }
+      } catch (err) {
+        logBox.textContent += "❌ Error: " + err + "\n";
+      }
+    });
+  </script>
+</body>
+</html>

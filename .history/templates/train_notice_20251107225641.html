@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🚀 Transformer Training Progress</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            width: 90%;
+            max-width: 650px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        .upload-section {
+            margin-bottom: 25px;
+        }
+
+        input[type="file"] {
+            padding: 8px;
+            margin-top: 10px;
+        }
+
+        button {
+            background-color: #2563eb;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+
+        .log-box {
+            background-color: #0f172a;
+            color: #f8fafc;
+            text-align: left;
+            font-family: monospace;
+            border-radius: 10px;
+            padding: 15px;
+            height: 250px;
+            overflow-y: auto;
+            margin-top: 20px;
+            white-space: pre-wrap;
+        }
+
+        .error {
+            color: #ef4444;
+        }
+
+        .success {
+            color: #10b981;
+        }
+
+        .progress-bar {
+            width: 100%;
+            background: #e2e8f0;
+            border-radius: 8px;
+            margin-top: 15px;
+            height: 10px;
+            overflow: hidden;
+        }
+
+        .progress {
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(90deg, #3b82f6, #06b6d4);
+            border-radius: 8px;
+            transition: width 0.4s ease;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #2563eb;
+            font-weight: 500;
+            margin: 0 8px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>🚀 Transformer Training Progress</h2>
+    <p>Select your dataset (.csv file):</p>
+
+    <form id="uploadForm" action="/train_transformer" method="post" enctype="multipart/form-data">
+        <div class="upload-section">
+            <input type="file" name="file" accept=".csv" required>
+        </div>
+        <button type="submit">Start Training</button>
+    </form>
+
+    <div id="progressBar" class="progress-bar">
+        <div id="bar" class="progress"></div>
+    </div>
+
+    <div id="logBox" class="log-box">
+        ⏳ Waiting for training logs...
+    </div>
+
+    <div class="footer-links">
+        <a href="/">🏠 Back to Home</a> |
+        <a href="/dashboard">📊 Admin Dashboard</a>
+    </div>
+</div>
+
+<script>
+const logBox = document.getElementById("logBox");
+const bar = document.getElementById("bar");
+let progress = 0;
+
+function startLogStream() {
+    try {
+        const evtSource = new EventSource("/train_logs");
+        evtSource.onmessage = (event) => {
+            const msg = event.data.trim();
+            if (!msg) return;
+
+            logBox.innerHTML += `\n${msg}`;
+            logBox.scrollTop = logBox.scrollHeight;
+
+            // Progress simulation
+            if (msg.includes("Epoch")) {
+                progress += 30;
+                bar.style.width = Math.min(progress, 95) + "%";
+            }
+            if (msg.includes("Model saved") || msg.includes("✅ Model trained successfully")) {
+                bar.style.width = "100%";
+                logBox.innerHTML += "\n✅ Training Completed Successfully! 🚀";
+                evtSource.close();
+            }
+            if (msg.includes("❌ Training failed")) {
+                bar.style.background = "#ef4444";
+                logBox.innerHTML += "\n❌ Training Failed. Check your dataset or console logs.";
+                evtSource.close();
+            }
+        };
+
+        evtSource.onerror = (err) => {
+            logBox.innerHTML += `\n❌ [Stream Error] ${err}`;
+            evtSource.close();
+        };
+    } catch (err) {
+        logBox.innerHTML += `\n❌ ${err}`;
+    }
+}
+
+window.onload = startLogStream;
+</script>
+</body>
+</html>

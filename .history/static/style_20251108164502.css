@@ -1,0 +1,131 @@
+/* ===== Global Layout ===== */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f5f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* ===== Main Container (for prediction & auth) ===== */
+.container, .auth-container {
+  background-color: #fff;
+  padding: 40px 50px;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+}
+
+/* ===== Headings ===== */
+h1 {
+  color: #1a1a1a;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+/* ===== Forms ===== */
+.form-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* ===== Buttons ===== */
+button, .btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #0056b3;
+}
+
+/* ===== Result Box (used in prediction) ===== */
+.result-box {
+  display: none;
+  background-color: #eef5ff;
+  border-left: 5px solid #007bff;
+  padding: 18px;
+  margin-top: 25px;
+  border-radius: 10px;
+}
+
+.result-label {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.result-positive {
+  color: #28a745;
+}
+
+.result-negative {
+  color: #dc3545;
+}
+
+/* ===== Links & Text ===== */
+.links, .link-text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.links a, .link-text a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.links a:hover, .link-text a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Messages ===== */
+.message {
+  margin-top: 15px;
+  font-size: 15px;
+  color: #e63946;
+  font-weight: 500;
+}
+
+/* ===== Small tweaks ===== */
+.auth-container input {
+  margin-bottom: 12px;
+}
+
+.auth-container .btn {
+  width: 100%;
+}

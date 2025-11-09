@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard | Cyberbullying Detection</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <h1>📊 Admin Dashboard</h1>
+    <p><strong>Welcome:</strong> {{ user }}</p>
+    <p><strong>Total Predictions:</strong> {{ stats.total }}</p>
+    <p><strong>Cyberbullying:</strong> {{ stats.bullying }}</p>
+    <p><strong>Non-Cyberbullying:</strong> {{ stats.non }}</p>
+
+    <h2>🕒 Recent Predictions</h2>
+    <div class="stats">
+      <ul>
+        {% for item in stats.recent %}
+          <li>
+            <strong>{{ item.text }}</strong> → 
+            {{ item.label }} 
+            ({{ item.timestamp | datetimeformat }})
+          </li>
+        {% else %}
+          <li>No recent predictions.</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <a class="logout" href="/logout">🚪 Logout</a><br>
+    <a class="back-home" href="/">← Back to Home</a>
+  </div>
+</body>
+</html>

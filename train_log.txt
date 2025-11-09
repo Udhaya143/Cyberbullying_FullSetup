@@ -1,0 +1,8 @@
+📂 Loading dataset: D:\Cyberbullying_FullSetup\Cyberbullying_FullSetup\uploads\uploaded_1762608921.csv
+✅ CSV Columns Detected: ['Screw you', '1']
+⚠️ Using first column as text: Screw you
+⚠️ Using last column as label: 1
+✅ Using text column: 'Screw you', label column: '1'
+🚀 Starting model training...
+✅ Training completed!
+❌ Training failed: keys must be str, int, float, bool or None, not int64

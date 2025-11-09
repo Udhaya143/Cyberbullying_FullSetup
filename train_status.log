@@ -1,0 +1,4 @@
+🚀 Training started...
+📂 Loading dataset: D:\Cyberbullying_FullSetup\Cyberbullying_FullSetup\uploads\uploaded_1762608921.csv
+
+❌ Training failed: keys must be str, int, float, bool or None, not int64

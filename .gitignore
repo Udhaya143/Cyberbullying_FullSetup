@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pt
+*.safetensors
+*.dll
+.DS_Store
+Thumbs.db

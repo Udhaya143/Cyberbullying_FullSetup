@@ -1,0 +1,266 @@
+/* ================================
+   🌐 GLOBAL STYLE
+=================================== */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f5f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+/* ================================
+   🧱 MAIN CONTAINERS
+=================================== */
+.container, .auth-container, .dashboard {
+  background-color: #fff;
+  padding: 35px 45px;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  max-width: 640px;
+  width: 100%;
+  margin: 30px auto;
+}
+
+/* ================================
+   🏷️ HEADERS
+=================================== */
+h1, h2, h3 {
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #2d3748;
+}
+
+/* ================================
+   📝 TEXTAREAS & INPUTS
+=================================== */
+textarea,
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 15px;
+  margin-top: 10px;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 160px;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* ================================
+   🎯 BUTTONS
+=================================== */
+button, .btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+}
+
+/* Logout Button Special */
+.logout-btn {
+  background-color: #ef4444;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #dc2626;
+}
+
+/* ================================
+   📊 RESULT BOX
+=================================== */
+.result-box {
+  background-color: #eef5ff;
+  border-left: 5px solid #007bff;
+  padding: 18px;
+  margin-top: 25px;
+  border-radius: 10px;
+}
+
+.result-label {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.result-positive {
+  color: #28a745;
+}
+
+.result-negative {
+  color: #dc3545;
+}
+
+/* ================================
+   🔗 LINKS
+=================================== */
+.links {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.links a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* ================================
+   🔐 AUTH PAGES
+=================================== */
+.auth-container {
+  max-width: 400px;
+  text-align: center;
+}
+
+.auth-container input {
+  width: 90%;
+}
+
+.auth-container button {
+  width: 94%;
+}
+
+.auth-container .error {
+  color: red;
+  font-size: 14px;
+  background: #ffe6e6;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* ================================
+   🧮 DASHBOARD PAGE
+=================================== */
+.dashboard {
+  max-width: 800px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.dashboard .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.dashboard h2 {
+  margin: 0;
+  color: #1e3a8a;
+}
+
+.dashboard .stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.dashboard .stats div span {
+  font-size: 18px;
+}
+
+.dashboard .bully {
+  color: #dc2626;
+}
+
+.dashboard .non {
+  color: #16a34a;
+}
+
+.recent {
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.recent ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recent li {
+  padding: 8px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.recent li:last-child {
+  border-bottom: none;
+}
+
+.back {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+}
+
+/* ================================
+   📱 RESPONSIVE
+=================================== */
+@media (max-width: 600px) {
+  .container, .dashboard, .auth-container {
+    padding: 25px;
+    width: 90%;
+  }
+
+  .dashboard .stats {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

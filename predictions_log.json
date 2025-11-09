@@ -1,0 +1,1237 @@
+[
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762522985.4658318
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762522986.3066556
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762522987.0410724
+  },
+  {
+    "text": "fuck",
+    "label": "Cyberbullying",
+    "timestamp": 1762523098.8437963
+  },
+  {
+    "text": "fuck",
+    "label": "Cyberbullying",
+    "timestamp": 1762523099.689124
+  },
+  {
+    "text": "fuck",
+    "label": "Cyberbullying",
+    "timestamp": 1762523099.8193035
+  },
+  {
+    "text": "fuck",
+    "label": "Cyberbullying",
+    "timestamp": 1762523100.026985
+  },
+  {
+    "text": "fuck",
+    "label": "Cyberbullying",
+    "timestamp": 1762523100.1773393
+  },
+  {
+    "text": "fuck",
+    "label": "Cyberbullying",
+    "timestamp": 1762523100.6069095
+  },
+  {
+    "text": "fuck",
+    "label": "Cyberbullying",
+    "timestamp": 1762523101.0569742
+  },
+  {
+    "text": "fuck",
+    "label": "Cyberbullying",
+    "timestamp": 1762523101.3707094
+  },
+  {
+    "text": "fuck",
+    "label": "Cyberbullying",
+    "timestamp": 1762523514.2870615
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762523815.6821635
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762523816.348945
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762523816.4828923
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762523816.5946536
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762523816.7216501
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762523816.84906
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762523816.974642
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762523817.161486
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762523818.5577104
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762523819.0949523
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762523819.3474567
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762523819.5871987
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762524154.3073592
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762524161.8051343
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762524472.6132393
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762524477.1732516
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762524479.8459027
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762524480.987922
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762524481.1235175
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762524481.2419071
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762524481.3722887
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762524481.487442
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762524481.6552858
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762524481.8935566
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762524484.901637
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762524491.067134
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762524494.0446627
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762524770.9179232
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762524776.144771
+  },
+  {
+    "text": "you are looking sexy",
+    "label": "Error",
+    "timestamp": 1762524789.026669
+  },
+  {
+    "text": "you are looking sexy",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762524791.971829
+  },
+  {
+    "text": "Not the right place for that comment",
+    "label": "Error",
+    "timestamp": 1762524927.1356502
+  },
+  {
+    "text": "Not the right place for that comment",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762524929.8926673
+  },
+  {
+    "text": "Not the right place for that comment",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762524936.7745094
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762525940.8315628
+  },
+  {
+    "text": "hi",
+    "label": "Error",
+    "timestamp": 1762525943.9869206
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526163.1639204
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526166.8665886
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526168.3336105
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526169.279185
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526169.5099173
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526169.8566158
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526170.0420778
+  },
+  {
+    "text": "bye",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526177.2699392
+  },
+  {
+    "text": "bye",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526177.9270997
+  },
+  {
+    "text": "bye",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526178.2615511
+  },
+  {
+    "text": "bye",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526178.420674
+  },
+  {
+    "text": "bye",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526178.6564684
+  },
+  {
+    "text": "bye",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526184.781523
+  },
+  {
+    "text": "fuck",
+    "label": "Cyberbullying",
+    "timestamp": 1762526189.7811549
+  },
+  {
+    "text": "fuck",
+    "label": "Cyberbullying",
+    "timestamp": 1762526193.4738567
+  },
+  {
+    "text": "fuck",
+    "label": "Cyberbullying",
+    "timestamp": 1762526194.4863117
+  },
+  {
+    "text": "fuck",
+    "label": "Cyberbullying",
+    "timestamp": 1762526196.6842387
+  },
+  {
+    "text": "fuck",
+    "label": "Cyberbullying",
+    "timestamp": 1762526198.1890054
+  },
+  {
+    "text": "fuck",
+    "label": "Cyberbullying",
+    "timestamp": 1762526198.9290426
+  },
+  {
+    "text": "fuck",
+    "label": "Cyberbullying",
+    "timestamp": 1762526376.500419
+  },
+  {
+    "text": "Just quit already",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526389.1467707
+  },
+  {
+    "text": "Just quit already",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526393.5293596
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526400.2820308
+  },
+  {
+    "text": "fuck",
+    "label": "Cyberbullying",
+    "timestamp": 1762526405.1076882
+  },
+  {
+    "text": "i have bomb in my home",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526417.616286
+  },
+  {
+    "text": "i have bomb in my home",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526422.5500538
+  },
+  {
+    "text": "she is more sexy",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526435.7306268
+  },
+  {
+    "text": "she is more sexy",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526437.2174299
+  },
+  {
+    "text": "she is more sexy",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526452.8538465
+  },
+  {
+    "text": "she is sexy",
+    "label": "Cyberbullying",
+    "timestamp": 1762526620.9844358
+  },
+  {
+    "text": "he having bomb and very dangerous",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526639.2971618
+  },
+  {
+    "text": "pishing",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526759.8631897
+  },
+  {
+    "text": "pishing",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526761.6172976
+  },
+  {
+    "text": "pishing",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526761.7932568
+  },
+  {
+    "text": "pishing",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526766.0676525
+  },
+  {
+    "text": "adhi is sexy boy",
+    "label": "Cyberbullying",
+    "timestamp": 1762526817.2943566
+  },
+  {
+    "text": "adhi is sexy boy",
+    "label": "Cyberbullying",
+    "timestamp": 1762526866.5552843
+  },
+  {
+    "text": "adhi is sexy boy",
+    "label": "Cyberbullying",
+    "timestamp": 1762526869.498337
+  },
+  {
+    "text": "eragand",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762526875.9221842
+  },
+  {
+    "text": "bomb",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762527069.7911086
+  },
+  {
+    "text": "gay",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762527075.420959
+  },
+  {
+    "text": "you looking bad",
+    "label": "Cyberbullying",
+    "timestamp": 1762527083.6806674
+  },
+  {
+    "text": "you looking bad",
+    "label": "Cyberbullying",
+    "timestamp": 1762527179.3609476
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762532857.154492
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762532857.9071245
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762532858.0543091
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762532858.203015
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762532858.5077074
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762532858.7306688
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762532860.260561
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762532860.3847673
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762532865.5578227
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762533210.3792713
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762533211.5782835
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762533215.9421086
+  },
+  {
+    "text": "sex",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762533477.4217687
+  },
+  {
+    "text": "sex",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762533490.704178
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762533575.6792839
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762533862.2145793
+  },
+  {
+    "text": "sex",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762533876.1066885
+  },
+  {
+    "text": "sexy",
+    "label": "Cyberbullying",
+    "timestamp": 1762534213.4594853
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762534220.3911536
+  },
+  {
+    "text": "sexy\r\n",
+    "label": "Cyberbullying",
+    "timestamp": 1762534228.4098043
+  },
+  {
+    "text": "sexy\r\n",
+    "label": "Cyberbullying",
+    "timestamp": 1762534232.6109707
+  },
+  {
+    "text": "bomb is very dangerous ",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762534255.2456422
+  },
+  {
+    "text": "o have bomb in my home",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762534269.802024
+  },
+  {
+    "text": "o have bomb in my home",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762534271.4782753
+  },
+  {
+    "text": "i have bomb in my home",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762534275.8885067
+  },
+  {
+    "text": "i have bomb in my home",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762534279.3108993
+  },
+  {
+    "text": "i have bomb in my home",
+    "label": "Cyberbullying",
+    "timestamp": 1762534485.9381697
+  },
+  {
+    "text": "i have bomb in my home",
+    "label": "Cyberbullying",
+    "timestamp": 1762534504.7131085
+  },
+  {
+    "text": "i have bomb in my home",
+    "label": "Cyberbullying",
+    "timestamp": 1762534789.5754972
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762534989.2300875
+  },
+  {
+    "text": "hisexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762534995.3873663
+  },
+  {
+    "text": "hisexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762534997.656483
+  },
+  {
+    "text": "hisexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762534998.915098
+  },
+  {
+    "text": "hisexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762534999.951531
+  },
+  {
+    "text": "hisexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762535000.5595372
+  },
+  {
+    "text": "hisexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762535000.847936
+  },
+  {
+    "text": "sexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762535007.902405
+  },
+  {
+    "text": "sexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762535009.1450381
+  },
+  {
+    "text": "sexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762535009.3001347
+  },
+  {
+    "text": "sexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762535009.4255657
+  },
+  {
+    "text": "sexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762535009.8244767
+  },
+  {
+    "text": "sexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762535009.9577713
+  },
+  {
+    "text": "sexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762535014.1716077
+  },
+  {
+    "text": "sexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762535016.0252697
+  },
+  {
+    "text": "sexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762535016.3292189
+  },
+  {
+    "text": "sexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762535016.6289768
+  },
+  {
+    "text": "sexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762535016.920536
+  },
+  {
+    "text": "hi",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762535067.057412
+  },
+  {
+    "text": "sexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762535072.6093228
+  },
+  {
+    "text": "sexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762535073.770587
+  },
+  {
+    "text": "sexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762535073.9369862
+  },
+  {
+    "text": "sexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762535074.0928564
+  },
+  {
+    "text": "sexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762535074.3678038
+  },
+  {
+    "text": "sexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762535074.5748606
+  },
+  {
+    "text": "sexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762535074.8027577
+  },
+  {
+    "text": "bomb",
+    "label": "Cyberbullying",
+    "timestamp": 1762535088.7424634
+  },
+  {
+    "text": "sexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762535094.2367678
+  },
+  {
+    "text": "sexual",
+    "label": "Cyberbullying",
+    "timestamp": 1762535242.658938
+  },
+  {
+    "text": "bomb",
+    "label": "Cyberbullying",
+    "timestamp": 1762535260.7351465
+  },
+  {
+    "text": "hi sexy girl",
+    "label": "Cyberbullying",
+    "timestamp": 1762595673.8334234
+  },
+  {
+    "text": "sexual\r\n",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762596821.0298858
+  },
+  {
+    "text": "sexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762596829.8126707
+  },
+  {
+    "text": "sexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762596980.1325262
+  },
+  {
+    "text": "sexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762597015.178862
+  },
+  {
+    "text": "sexual",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762597016.8781004
+  },
+  {
+    "text": "sexual",
+    "label": "Cyberbullying",
+    "timestamp": 1762597533.7957156
+  },
+  {
+    "text": "he is so dumb",
+    "label": "Cyberbullying",
+    "timestamp": 1762597545.5029206
+  },
+  {
+    "text": "he is so hoty",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762597551.1507926
+  },
+  {
+    "text": "he is so naughty\r\n",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762597569.723282
+  },
+  {
+    "text": "he is so naughty\r\n",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762597571.1890302
+  },
+  {
+    "text": "he is so naughty\r\n",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762597571.438642
+  },
+  {
+    "text": "he is so naughty\r\n",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762597571.77191
+  },
+  {
+    "text": "he is so naughty\r\n",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762597580.5806649
+  },
+  {
+    "text": "he is so naughty\r\n",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762597640.0512567
+  },
+  {
+    "text": "he has a bomb",
+    "label": "Cyberbullying",
+    "timestamp": 1762597651.1751838
+  },
+  {
+    "text": "he has a sexy",
+    "label": "Cyberbullying",
+    "timestamp": 1762597662.7884102
+  },
+  {
+    "text": "he has a bouner",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762597671.663435
+  },
+  {
+    "text": "he is naught",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762597690.003743
+  },
+  {
+    "text": "She\u2019s a naughty girl, send pics",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762597803.4380574
+  },
+  {
+    "text": "She\u2019s a naughty girl, send pics",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762597804.8834083
+  },
+  {
+    "text": "She\u2019s a naughty girl, send pics",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762597805.2072322
+  },
+  {
+    "text": "She\u2019s a naughty girl, send pics",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762598017.0351539
+  },
+  {
+    "text": "She\u2019s a naughty girl, send pics",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762598023.947895
+  },
+  {
+    "text": "She\u2019s a naughty girl, send pics",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762598025.4450119
+  },
+  {
+    "text": "She\u2019s a naughty girl, send pics",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762598025.8222115
+  },
+  {
+    "text": "She\u2019s a naughty girl, send pics",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762598030.7940712
+  },
+  {
+    "text": "She\u2019s a naughty girl, send pics",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762598033.9644105
+  },
+  {
+    "text": "hi sexy girl",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762598783.5143814
+  },
+  {
+    "text": "hi\r\n",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762599867.9719667
+  },
+  {
+    "text": "sexy",
+    "label": "Cyberbullying",
+    "timestamp": 1762599874.1326032
+  },
+  {
+    "text": "bomb",
+    "label": "Cyberbullying",
+    "timestamp": 1762599880.3557806
+  },
+  {
+    "text": "danger",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762599885.094723
+  },
+  {
+    "text": "i will kill you",
+    "label": "Cyberbullying",
+    "timestamp": 1762599910.6641138
+  },
+  {
+    "text": "hi sexy girl",
+    "label": "Cyberbullying",
+    "timestamp": 1762599916.3294625
+  },
+  {
+    "text": "hii sexy",
+    "label": "Cyberbullying",
+    "timestamp": 1762600665.6720371
+  },
+  {
+    "text": "he i very harm",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762600675.879859
+  },
+  {
+    "text": "he i very harm",
+    "label": "Cyberbullying",
+    "timestamp": 1762600719.3772633
+  },
+  {
+    "text": "useless",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762600753.90681
+  },
+  {
+    "text": "useless",
+    "label": "Cyberbullying",
+    "timestamp": 1762600781.444227
+  },
+  {
+    "text": "useless",
+    "label": "Cyberbullying",
+    "timestamp": 1762600781.4806159
+  },
+  {
+    "text": "useless",
+    "label": "Cyberbullying",
+    "timestamp": 1762600781.4939322
+  },
+  {
+    "text": "useless",
+    "label": "Cyberbullying",
+    "timestamp": 1762600781.5232542
+  },
+  {
+    "text": "useless",
+    "label": "Cyberbullying",
+    "timestamp": 1762600781.5525348
+  },
+  {
+    "text": "useless",
+    "label": "Cyberbullying",
+    "timestamp": 1762600781.5787675
+  },
+  {
+    "text": "useless",
+    "label": "Cyberbullying",
+    "timestamp": 1762600781.6040587
+  },
+  {
+    "text": "useless",
+    "label": "Cyberbullying",
+    "timestamp": 1762600781.6300747
+  },
+  {
+    "text": "useless",
+    "label": "Cyberbullying",
+    "timestamp": 1762600781.6510699
+  },
+  {
+    "text": "useless",
+    "label": "Cyberbullying",
+    "timestamp": 1762600781.6772158
+  },
+  {
+    "text": "useless",
+    "label": "Cyberbullying",
+    "timestamp": 1762600781.691145
+  },
+  {
+    "text": "useless",
+    "label": "Cyberbullying",
+    "timestamp": 1762601088.8263454
+  },
+  {
+    "text": "talk to someone",
+    "label": "Cyberbullying",
+    "timestamp": 1762601092.5795605
+  },
+  {
+    "text": "i will fuck you",
+    "label": "Cyberbullying",
+    "timestamp": 1762601126.2939036
+  },
+  {
+    "text": "i will fuck you",
+    "label": "Cyberbullying",
+    "timestamp": 1762601128.037664
+  },
+  {
+    "text": "i will kick you ass",
+    "label": "Cyberbullying",
+    "timestamp": 1762601139.3815665
+  },
+  {
+    "text": "i will kick your mom",
+    "label": "Cyberbullying",
+    "timestamp": 1762601148.9942534
+  },
+  {
+    "text": "I want to die, nobody cares about me.\u201d",
+    "label": "Cyberbullying",
+    "timestamp": 1762601210.5760162
+  },
+  {
+    "text": "I want to die, nobody cares about me.\u201d",
+    "label": "Cyberbullying",
+    "timestamp": 1762601214.8851917
+  },
+  {
+    "text": "I want to die, nobody cares about me.\u201d",
+    "label": "Cyberbullying",
+    "timestamp": 1762601215.8696024
+  },
+  {
+    "text": "I want to die, nobody cares about me.\u201d",
+    "label": "Cyberbullying",
+    "timestamp": 1762601216.0891478
+  },
+  {
+    "text": "I want to die, nobody cares about me.\u201d",
+    "label": "Cyberbullying",
+    "timestamp": 1762601216.3088408
+  },
+  {
+    "text": "I want to die, nobody cares about me.\u201d",
+    "label": "Cyberbullying",
+    "timestamp": 1762601216.5374403
+  },
+  {
+    "text": "I want to die, nobody cares about me.\u201d",
+    "label": "Cyberbullying",
+    "timestamp": 1762601230.752331
+  },
+  {
+    "text": "dieall",
+    "label": "Cyberbullying",
+    "timestamp": 1762601281.315014
+  },
+  {
+    "text": "hitler",
+    "label": "Cyberbullying",
+    "timestamp": 1762601294.4747107
+  },
+  {
+    "text": "hitler",
+    "label": "Cyberbullying",
+    "timestamp": 1762601295.94344
+  },
+  {
+    "text": "hitler",
+    "label": "Cyberbullying",
+    "timestamp": 1762601296.1061556
+  },
+  {
+    "text": "hitler",
+    "label": "Cyberbullying",
+    "timestamp": 1762601296.3307378
+  },
+  {
+    "text": "hitler",
+    "label": "Cyberbullying",
+    "timestamp": 1762601296.4584355
+  },
+  {
+    "text": "hitler",
+    "label": "Cyberbullying",
+    "timestamp": 1762601296.584088
+  },
+  {
+    "text": "hitler",
+    "label": "Cyberbullying",
+    "timestamp": 1762601296.7200067
+  },
+  {
+    "text": "hitler",
+    "label": "Cyberbullying",
+    "timestamp": 1762601297.3832843
+  },
+  {
+    "text": "hitler",
+    "label": "Cyberbullying",
+    "timestamp": 1762601297.5471742
+  },
+  {
+    "text": "hitler",
+    "label": "Cyberbullying",
+    "timestamp": 1762601297.668358
+  },
+  {
+    "text": "hitler",
+    "label": "Cyberbullying",
+    "timestamp": 1762601297.8886294
+  },
+  {
+    "text": "hitler",
+    "label": "Cyberbullying",
+    "timestamp": 1762601427.376132
+  },
+  {
+    "text": "hitler",
+    "label": "Cyberbullying",
+    "timestamp": 1762601900.5188792
+  },
+  {
+    "text": "hitler",
+    "label": "Cyberbullying",
+    "timestamp": 1762601902.5375223
+  },
+  {
+    "text": "hitler",
+    "label": "Cyberbullying",
+    "timestamp": 1762601903.645814
+  },
+  {
+    "text": "hitler",
+    "label": "Cyberbullying",
+    "timestamp": 1762601903.8466344
+  },
+  {
+    "text": "hitler",
+    "label": "Cyberbullying",
+    "timestamp": 1762601903.9625778
+  },
+  {
+    "text": "hitler",
+    "label": "Cyberbullying",
+    "timestamp": 1762601904.0966272
+  },
+  {
+    "text": "hitler",
+    "label": "Cyberbullying",
+    "timestamp": 1762601904.2824655
+  },
+  {
+    "text": "hitler",
+    "label": "Cyberbullying",
+    "timestamp": 1762601904.4284055
+  },
+  {
+    "text": "hitler",
+    "label": "Cyberbullying",
+    "timestamp": 1762601904.5446615
+  },
+  {
+    "text": "hitler",
+    "label": "Cyberbullying",
+    "timestamp": 1762601904.762886
+  },
+  {
+    "text": "sexual",
+    "label": "Cyberbullying",
+    "timestamp": 1762601908.8939269
+  },
+  {
+    "text": "fuck",
+    "label": "Non-Cyberbullying",
+    "timestamp": 1762601913.203679
+  },
+  {
+    "text": "fuck",
+    "label": "Cyberbullying",
+    "timestamp": 1762602140.6293185
+  },
+  {
+    "text": "suck",
+    "label": "Cyberbullying",
+    "timestamp": 1762602145.5657547
+  },
+  {
+    "text": "suck",
+    "label": "Cyberbullying",
+    "timestamp": 1762602146.7319267
+  },
+  {
+    "text": "suck",
+    "label": "Cyberbullying",
+    "timestamp": 1762602146.9559639
+  },
+  {
+    "text": "bomb",
+    "label": "Cyberbullying",
+    "timestamp": 1762602151.182022
+  },
+  {
+    "text": "i will fuck your mom",
+    "label": "Cyberbullying",
+    "timestamp": 1762602161.8048599
+  },
+  {
+    "text": "fuck",
+    "label": "Cyberbullying",
+    "timestamp": 1762602765.9629753
+  },
+  {
+    "text": "fuck",
+    "label": "Cyberbullying",
+    "timestamp": 1762604278.4920533
+  },
+  {
+    "text": "bomb in parliment",
+    "label": "Cyberbullying",
+    "timestamp": 1762609232.3107693
+  }
+]
