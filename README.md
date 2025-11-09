@@ -23,3 +23,5 @@ How to run:
 Notes:
 - Transformer training requires internet to download models the first time.
 - If behind a firewall, download model files manually and place under models/transformer.
+- https://drive.google.com/drive/folders/18n4Dr5zhATdNuB30ETufTIndvd7owmeI?usp=drive_link
+replace the folder files with in this folder Cyberbullying_FullSetup\models\checkpoints\checkpoint-2
